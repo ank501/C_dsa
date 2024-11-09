@@ -5,7 +5,7 @@ int array [size] = {10,6,3,4,2};
 
 int Bubble_sort( int arr[size] ){
   for(int i=0;i<size;i++){
-    for(int j=0;j<size-j-1;j++){
+    for(int j=0;j<=size+1-j;j++){
       if(arr[j]>arr[j+1]){
           int temp = arr[j];
           arr[j]=arr[j+1];
@@ -16,9 +16,12 @@ int Bubble_sort( int arr[size] ){
 }
 
 int main(){
+    for(int i=0;i<size;i++){
+        printf("\n Here is the un-sorted array elements element at %d index is %d\n",i,array[i]);
+    }
     Bubble_sort(array);
     for(int i=0;i<size;i++){
-        printf("\n Here is the sorted array elements element at %d index is %d\n",array,array[i]);
+        printf("\n Here is the sorted array elements element at %d index is %d\n",i,array[i]);
     }
     return 0;
 }
