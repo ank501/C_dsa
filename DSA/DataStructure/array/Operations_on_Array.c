@@ -11,28 +11,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define size 6
-int arr[size] ;
-int data,k;
+int arr[size]={};
+
 //   A)  Insert a new element at beginning    
-int insert_at_begining(){
+void insert_at_begining(int data){
              printf("\n Enter the data to insert at begining of an array\n");
              scanf("%d",data);
              arr[0]=data;
 }
 //   B)  Insert a new element at last.   
-int insert_at_end(){
+void insert_at_end(int data){
              printf("\n Enter the data to insert at end of an array\n");
              scanf("%d",data);
-             arr[0]=data;
+             arr[size-1]=data;
 }
 //   C)  Insert a new element at any position k. 
-int insert_at_Kth_position(){
+void insert_at_Kth_position(int k,int data){
              printf("\n Enter the data to insert at Kth position of an array\n");
              printf("Enter position number \n");
-             scanf("%d",k);
+             scanf("%d",&k);
              printf("Enter element \n");
              scanf("%d",data);
-            //  arr[k]=data;
+             arr[k]=data;
              for(int i=0;i<size;i++){
                   printf("%d, ",arr[i]);
                  }
@@ -45,7 +45,7 @@ int Print_arr(){
 }
 // Main function ;
 int main(){
-    int option = 0;
+    int option = 0,data,k;
   
     while(option<7){
 
@@ -55,10 +55,13 @@ int main(){
     switch (option)
     {
     case 1 : insert_at_begining( data);
+             option=0;
         break;
      case 2 :insert_at_end(data);
+              option=0;
         break;
      case 3 : insert_at_Kth_position(k,data);
+             option=0;
         break;
      case 4 : Print_arr();
         break;

@@ -7,37 +7,38 @@
 #include <stdio.h>
 #include<stdlib.h>
 #define size 6
-int tos = -1;
+int top = -1;
 int Stack[size] ;
 
 
 // Push funtion 
 int Push(int data){
-    if(tos==size-1){
+    if(top==size-1){
       printf("\n Stack overflow");
     }
     else{
-        tos++;
-        Stack[tos]=data;
+        top++;
+        Stack[top]=data;
     }
 }
 // Pop function
 int Pop(){
- if(tos==-1){
+ if(top==-1){
     printf("\n stack underflow");
  }
  else{
-    tos--;
+    top--;
  }
 }
 // Peek function
 int Peek(){
-  printf("\n Element at peak is %d",Stack[tos]);
+  printf("\n Element at peak is %d",Stack[top]);
 }
 // display function , for showing elements of the array.
 int Display(){
-   for(int i=0;i<=tos;i++){
-    printf("%d, ",Stack[i]);
+   for(int i=top;i>=0;i--){
+    printf("%d",Stack[i]);
+    
    }
 }
 // Main function 
