@@ -64,6 +64,22 @@ void Dequeue_from_rear(){
     rear--;
 }
 
+// --------------------------------------** Dequeue from the front **-------------------------------------
+
+void Dequeu_from_front(){
+    if(front==-1){
+        printf("\n Deque is empty\n");
+    }
+    if(rear==front){
+        rear=front=-1;
+    }
+    if(front == size-1){
+        front=0;
+    }
+    front++;
+}
+// ---------------------------------** Display Dequeue **---------------------------------------
+
 int main(){
     return 0;
 }
