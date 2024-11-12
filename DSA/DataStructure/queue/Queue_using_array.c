@@ -1,3 +1,7 @@
+// 10) Write a choice based program to perform following operations on QUEUE 
+// a) Enqueue 
+// b) Dequeue
+
 #include <stdio.h>
 #include<stdlib.h>
 #define size 5

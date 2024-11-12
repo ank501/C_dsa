@@ -13,7 +13,7 @@ void push(int data) {
   stack[top]=data;
 }
 
-// pop function ;
+// Pop function ;
 void pop(){
   if(top==-1){
     printf("\n stack underflow");
@@ -23,6 +23,7 @@ void pop(){
 
 // main function ;
 int main(){
+    if(stack[top]=="")
     return 0;
 }
 
