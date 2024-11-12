@@ -48,7 +48,21 @@ void Enqueu_from_front(int data) {
     }
 }
 
+// -----------------------------------** Dequeue from rear **-----------------------------------------
 
+void Dequeue_from_rear(){
+    if(front==-1){
+        printf("\n deque is empty");
+    }
+    if(rear==0){
+        rear=size-1;
+    }
+    if(front==rear){
+        rear=-1;
+        front=-1;
+    }
+    rear--;
+}
 
 int main(){
     return 0;
