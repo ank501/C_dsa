@@ -6,11 +6,19 @@ int rear = -1;
 
 
 void Enqueu(int data){
-    if(front==0 && rear ==size-1 ){
+    if(front==0 && rear ==size-1 || front == rear+1 ){
        printf("\n queue is full");
     }
-    else {
-        circular_queue[rear] = data;
+    if(rear!=size-1){
+        if(front ==-1){
+            front=0; 
+        }
+        rear++;
+        circular_queue[rear]=data;
+    }
+    if(rear == size -1 && front !=0 ){
+          rear=0;
+          circular_queue[rear] = data;
     }
 }
 
