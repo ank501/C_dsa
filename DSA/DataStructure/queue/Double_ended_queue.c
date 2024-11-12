@@ -11,6 +11,8 @@ int deque[size];
 int front = -1;
 int rear = -1;
 
+// ---------------------------------** Enqueu from Rear **---------------------------------
+
 void enqueue_from_rear(int data){
     if(rear==size-1 && front ==0 || front == rear+1){
         printf("\n  Deque is Full \n");
@@ -27,6 +29,26 @@ void enqueue_from_rear(int data){
         deque[rear]=data;
     }
 }
+
+// -------------------------------------** Enqueu from Front **-------------------------------
+
+void Enqueu_from_front(int data) {
+    if(rear==size-1 && front ==0 || front == rear+1){
+        printf("\n  Deque is Full \n");
+    }else{
+         if(front==0){
+            front=size-1;
+         }
+         if(front ==-1 ){
+            front = 0;
+            rear = 0;
+         }
+         front--;
+         deque[front]=data;
+    }
+}
+
+
 
 int main(){
     return 0;
