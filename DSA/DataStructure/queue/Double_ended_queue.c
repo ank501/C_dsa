@@ -55,7 +55,7 @@ void Enqueu_from_front(int data) {
 
 void Dequeue_from_rear(){
     if(front==-1){
-        printf("\n deque is empty");
+        printf("\n Deque is empty \n");
     }
     if(rear==0){
         rear=size-1;
@@ -82,6 +82,10 @@ void Dequeu_from_front(){
     front++;
 }
 // ---------------------------------** Display Dequeue **---------------------------------------
+ 
+ void Display_Deque(){
+    
+ }
 
 int main(){
     int option=0;
@@ -90,19 +94,19 @@ int main(){
         scanf("%d",&option);
         switch (option)
         {
-        case 1: printf("\n Enter the data");
+        case 1: printf("\n Enter the data \n");
                 scanf("%d",&data);
                 Enqueue_from_rear(data);
             break;
-        case 2: printf("\n Enter the data");
+        case 2: printf("\n Enter the data \n");
                 scanf("%d",&data);
                 Enqueu_from_front(data);
             break;
         case 3: Dequeue_from_rear();
-                printf("Dequeue from rear is performed");
+                printf("Dequeue from rear is performed\n");
             break;
         case 4: Dequeu_from_front();
-                 printf("Dequeue from front is performed");
+                 printf("Dequeue from front is performed\n");
             break;
         case 5: Display_Deque();
             break;
