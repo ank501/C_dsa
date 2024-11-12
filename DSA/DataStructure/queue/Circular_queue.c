@@ -21,7 +21,11 @@ void Enqueu(int data){
           circular_queue[rear] = data;
     }
 }
-
+void dequeu(){
+    if(rear==-1 && front ==-1){
+        printf("\n circular queue is Empty");
+    }
+}
 int main (){
     return 0;
 }
