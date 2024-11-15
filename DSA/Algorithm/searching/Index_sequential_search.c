@@ -9,13 +9,35 @@ int main(){
     int ind_arr_size =25/ele_in_group;
     int index_arr[ind_arr_size];
     int index=0;;
+
     for(int i=0;i<25;i+=ele_in_group){
        index_arr[index++]=i;
-    //    printf("\n hello world");
     }
-    for(int i =0;i<7;i++){
+
+    int x;
+    printf("\n Enter the element to search \n");
+    scanf("%d",x);
+
+    int start ;
+    int end ;
+   
+
+    for(int i=0;i<ind_arr_size;i++){
+        if(x>=arr[index_arr[i]]&&x<=arr[index_arr[i+1]]){
+            start=index_arr[i];
+            end=index_arr[i+1];
+             printf("\n hello world 2");
+        }
+    }
+  
+     for(int i=start;i<end;i++){
+        if(x==arr[i]){
+            printf("\n %d Element is present in the array at %d th index",x,i);
+            break;
+        }
+     }
+        for(int i =0;i<7;i++){
         printf("%d ",index_arr[i]);
     }
-    printf("\n hello world");
     return 0;
 }
