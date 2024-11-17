@@ -11,15 +11,16 @@ void merge(int arr[], int start, int end, int mid){
   int left_arr[left_arr_size] ;
   int right_arr[right_arr_size];
   
-  int i=0;
-  int j=0;
-  int k=start;
-  for(i=0;i<left_arr_size;i++){
+
+  for(int i=0;i<left_arr_size;i++){
       left_arr[i]=arr[start+i];
   }
-  for(j=0;j<right_arr_size;j++){
+  for(int j=0;j<right_arr_size;j++){
     right_arr[j]=arr[mid+j+1];
   }
+    int i=0;
+  int j=0;
+  int k=start;
   while(i<left_arr_size && j<right_arr_size){
         if(left_arr[i]<=right_arr[j]){
           arr[k]=left_arr[i];
