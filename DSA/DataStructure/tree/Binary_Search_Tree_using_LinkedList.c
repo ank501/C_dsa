@@ -25,7 +25,29 @@ struct Node *createNode(int data)
 };
 
 void insert(int data){
-   
+    struct Node *newNode = createNode(data);
+    if(root == NULL){
+          root = newNode;
+    }
+    else{
+      struct Node * temp = root;
+      struct Node *parent = NULL;
+      while(temp !=NULL){
+          parent=temp;
+          if(newNode->data <temp->data){
+            temp=temp->left;
+          }
+          else{
+            temp=temp->right;
+          }
+      }
+      if(newNode->data<parent->data){
+        parent->left=newNode;
+      }else{
+        parent->right=newNode;
+      }
+    }
+
 }
 
 
