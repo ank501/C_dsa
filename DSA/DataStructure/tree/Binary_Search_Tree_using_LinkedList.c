@@ -50,9 +50,36 @@ void insert(int data){
 
 }
 
-
+void inOrder(struct Node * temp){
+    // int data;
+   if(temp!=NULL){
+    inOrder(temp->left);
+    printf("%d ",temp->data);
+    inOrder(temp->right);
+   }
+}
 
 
 int main(){
-
+   int choice ,data;
+   while (1)
+   {
+    printf("\n select option \n 1 for enter data \n 2 for traverse \n 3 for exit");
+    scanf("%d",&choice);
+    switch (choice)
+    {
+    case 1: printf("Enter data");
+            scanf("%d",&data);
+            insert(data);
+            break;
+    case 2: inOrder(root);
+            break;
+    case 3: printf("Exiting program.\n");
+            exit(0); // Exit the program
+            break;
+    default: printf("Invalid option. Please try again.\n");
+  
+    }
+   }
+   
 }
