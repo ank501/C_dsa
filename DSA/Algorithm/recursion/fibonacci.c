@@ -10,7 +10,7 @@ int fibo(int n){
 int User_input(){
                  int option = -1 ;
                  int x ;
-                 printf("\n 1. Enter the number which you want to find the fibbonacci \n 2. Press # for Exit ");
+                 printf("\n 1. Enter the number which you want to find the fibbonacci \n 2. Press 2 for Exit ");
                  printf("\n Select option \n");
                  scanf("%d",option);
                  printf("\n Enter number \n");
