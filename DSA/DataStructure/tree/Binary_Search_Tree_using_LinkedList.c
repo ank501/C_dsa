@@ -105,7 +105,7 @@ int main(){
             printf("\n Post Order Traversal : ");
             postOrder(root); 
             printf("\n");
-
+            break;
     case 6: printf("Exiting program.\n");
             exit(0); // Exit the program
     
