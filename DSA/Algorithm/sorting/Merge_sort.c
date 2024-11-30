@@ -83,7 +83,12 @@ int main(){
 // Algorithm ;
 /*
 1. It works on the principle of divide and conquere .
-2. Divide the original 
+2. Divide function will Divide the original , using start end and mid , mid is calculated as start+end/2;
+3. Divide the array recursively , .
+4. Merge Function will and create left array and right array ,left array loop will be from start to mid , and for right array it will be mid+1 to end.
+5. size of left array will be mid-start+1 and for right array end-mid;
+6. insert the values in the left and right array .
+7. now compare the first element of array and merge them .
 
 
 
