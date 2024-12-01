@@ -5,7 +5,6 @@
 // int array [size] = {10,6,3,4,2};
     int arr [25] = {10,82,543,4,17,3,79,33,18,42,7,3,7,90,43,45,245,24,64,13,67,22,535,6554,342} ;
 
-
 void Bubble_sort( int arr[size] ){
  // outer loop for iterating over whole array for repeating task of comparesion ;
   for(int i=0;i<size;i++){

@@ -1,6 +1,6 @@
 #include <stdio.h>
 int arr[]={8,5,3,6,1};
-// Selection sort on the base of index;
+//--------------------------------------**  Selection sort on the base of index **----------------------------;
 int selection_sort_1(){
     for(int i=0;i<5;i++){
       for(int j =i+1 ;j<5;j++){
@@ -12,7 +12,7 @@ int selection_sort_1(){
       }
     }
 }
-// Selection sort on the basis of value ;
+// ----------------------------------------** Selection sort on the basis of value **---------------------------;
 int selection_sort_2(){
     int i,min_value,min_index;
    for(i=0;i<5;i++){
@@ -25,27 +25,21 @@ int selection_sort_2(){
        min_index=j;
      }
    }
-   
         int temp = arr[i];
         arr[i] = arr[min_index];
         arr[min_index]=temp;
-     
    }
-   
-  
-   
 }
-
-// main function ;
+// ---------------------------------------** main function **--------------------------------------------------- ;
 int main (){
     for(int i=0;i<5;i++){
         printf("%d ",arr[i]);
     }
     printf("\n");
-    // selection_sort_1(arr);
     selection_sort_2(arr);
     for(int i=0;i<5;i++){
         printf("%d ",arr[i]);
     }
     return 0;
 }
+// Algorithm
