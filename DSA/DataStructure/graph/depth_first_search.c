@@ -53,7 +53,7 @@ int main(){
     
     
     printf("\n Enter number of start edge and end edge\n");
-    for(int i=0;i<edges;i++){
+    for(int i=1;i<=edges;i++){
          scanf("%d %d",&start_edge,&end_edge);
          adj_mat[start_edge][end_edge]=1;
         adj_mat[end_edge][start_edge]=1;
@@ -64,9 +64,10 @@ int main(){
 
     // print adjcent matrix 
 
-    
+    printf("\n Adjacency matrix : = \n");
     for(int i=0;i<vertices;i++){
        for(int j=0;j<vertices;j++){
+
         printf("%d ",  adj_mat[i][j]);
        }
        printf("\n");
